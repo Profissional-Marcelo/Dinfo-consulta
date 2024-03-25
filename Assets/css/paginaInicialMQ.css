@@ -1,0 +1,22 @@
+@media (min-width: 700px)  {
+    h1 {
+        font-size: 5em;
+    }
+
+    div.barra{
+        height: 5px;
+        width: 270px;
+    }
+
+    form > input{
+        height: 40px;
+        width: 270px;
+        font-size: 25px;
+    }
+
+    form > div > button {
+        font-size: 18px;
+    }
+    
+}
+
