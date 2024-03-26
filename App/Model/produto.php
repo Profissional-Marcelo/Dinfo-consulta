@@ -4,9 +4,15 @@
         private $id;
         private $nome;
         private $marca;
-        private $preco;
+        private $modelo;
         private $foto;
-        private $foto64;
+
+        private $patrimonio;
+
+        private $funciona;
+
+        private $descricao;
+
         private $tabela = "produto";
 
         //Getters e Setters
@@ -31,13 +37,6 @@
             $this->marca = $marca;
         }
 
-        public function getPreco(){
-            return $this->preco;
-        }
-        public function setPreco($preco){
-            $this->preco = $preco;
-        }
-
         public function getFoto(){
             return $this->foto;
         }
@@ -45,13 +44,37 @@
             $this->foto = $foto;
         }
 
-        public function getFoto64(){
-            return $this->foto64;
-        }
-        public function setFoto64($foto64){
-            $this->foto64 = $foto64;
+        public function getModelo(){
+            return $this->modelo;
         }
 
+        public function setModelo($modelo){
+            $this->modelo = $modelo;
+        }
+
+        public function getPatrimonio(){
+            return $this->patrimonio;
+        }
+
+        public function setPatrimonio($patrimonio){
+            $this->patrimonio = $patrimonio;
+        }
+
+        public function getFunciona(){
+            return $this->funciona;
+        }
+
+        public function setFunciona($funciona){
+            $this->funciona = $funciona;
+        }
+
+        public function getDescricao(){
+            return $this->descricao;
+        }
+
+        public function setDescricao($descricao){
+            $this->descricao = $descricao;
+        }
         //Metodos
 
         //Consulta geral
@@ -100,10 +123,10 @@
 		}
 
         //Cadastrar
-        public function cadastrar($nome,$marca,$preco,$foto,$foto64){
-            $sql= "insert into $this->tabela(nome,marca,preco,foto,foto64) values(?,?,?,?,?)";
+        public function cadastrar($nome,$marca,$modelo,$funciona,$foto, $localizacao, $patrimonio, $descricao){
+            $sql= "insert into $this->tabela(nome,marca,modelo,funciona,foto,localizacao,patrimonio,descricao) values(?,?,?,?,?)";
             $stmt = $this->conn->prepare($sql);
-            $stmt->bind_param('sssss', $nome,$marca,$preco,$foto,$foto64);
+            $stmt->bind_param('sssss', $nome,$marca,$modelo,$funciona,$foto,$localizacao,$patrimonio,$descricao);
             $stmt->execute();
             if($stmt==true){
                 /*ALTERAR LINHA DE BAIXO */

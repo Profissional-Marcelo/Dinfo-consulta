@@ -5,8 +5,5 @@
                     header('Location: ../View/paginaicial.php');
                 } else {
                     header('Location: ../View/paginaicial.php');
-                }
-            
-
-    
+                }            
 ?>
