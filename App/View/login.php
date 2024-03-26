@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DINFO LOGIN - CONSULTA PATRIMONIO</title>
-    <link rel="stylesheet" href="../../Assets/css/paginaInicial.css">
-    <link rel="stylesheet" href="../../Assets/css/paginaInicialMQ.css">
+    <link rel="stylesheet" href="../../Assets/css/login.css">
+    <link rel="stylesheet" href="../../Assets/css/loginMQ.css">
 </head>
 <body>
     <section class="login" id="login">
@@ -15,9 +15,10 @@
             <input type="password" name="senha" id="senha" placeholder="Informe a senha">
             <div class="button">
                 <button type="submit" class="logar" id="logar">Entrar</button>
-                <button type="submit" class="visitante" id="visitante">Entrar como visitante</button>
+                <a href="visitante.php" class="visitante" id="visitante">Entrar como visitante</a>
             </div>
         </form>
+       
     </section>
 
 </body>

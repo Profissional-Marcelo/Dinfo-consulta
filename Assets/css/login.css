@@ -33,6 +33,7 @@ h1{
     margin: 0px;
 }
 
+
 span.amarelo{
     color: var(--amarelo);
 }
@@ -54,6 +55,10 @@ div.barra{
 
 form { 
     font-family:  sans-serif;;
+}
+
+button:hover{
+    text-decoration: underline;
 }
 
 form > input {
@@ -78,11 +83,22 @@ form > div {
 }
 
 form > div > button {
-    
     cursor: pointer;
     border: none;
     margin-top: 10px;
-    padding: 10px;
+    padding: 10px 5px;
+    font-size: 15px;
+}
+
+a.visitante {
+    cursor: pointer;
+    border: none;
+    margin-top: 10px;
+    padding: 10px 5px;
+    font-size: 15px;
+    background-color: var(--vermelho);
+    color: var(--amarelo);
+    text-decoration: none;
 }
 
 form > div > button.logar {
@@ -90,7 +106,7 @@ form > div > button.logar {
     color: var(--amarelo);
 }
 
-form > div > button.visitante{
-    background-color: var(--vermelho);
-    color: var(--amarelo);
+
+a.visitante:hover{
+    text-decoration: underline;
 }
