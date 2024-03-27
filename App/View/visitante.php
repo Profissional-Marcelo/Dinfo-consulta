@@ -10,7 +10,7 @@
 <body>
     <section class="sistema">
       <input type="text" name="patrimonio" id="patrimonio" placeholder="Consulta patrimonio">
-      <a href="filtro.php">Lista personalizada</a>
+      <a href="filtro.php" class="lista">Lista personalizada</a>
     </section>
 </body>
 </html>
