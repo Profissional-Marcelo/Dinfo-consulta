@@ -16,7 +16,7 @@ html {
 }
 
 body {
-    background-image: radial-gradient(circle, #343434, #090909);
+    background-image: radial-gradient(circle, #3f3f3f, #090909);
 }
 
 
@@ -110,3 +110,4 @@ form > div > button.logar {
 a.visitante:hover{
     text-decoration: underline;
 }
+

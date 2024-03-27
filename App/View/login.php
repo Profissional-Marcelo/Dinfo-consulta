@@ -11,14 +11,13 @@
     <section class="login" id="login">
         <h1><span class="amarelo">D</span><span class="vermelho">I</span><span class="verde">N</span><span class="amarelo">F</span><span class="vermelho">O</span></h1>
         <div class="barra"></div>
-        <form action="../Controller/usuario/logar.php">
+        <form action="../Controller/usuario/logar.php" method="post">
             <input type="password" name="senha" id="senha" placeholder="Informe a senha">
             <div class="button">
                 <button type="submit" class="logar" id="logar">Entrar</button>
                 <a href="visitante.php" class="visitante" id="visitante">Entrar como visitante</a>
             </div>
         </form>
-       
     </section>
 
 </body>
