@@ -1,0 +1,31 @@
+
+
+create database produto;
+use produto;
+
+create table produto (
+	`id` int primary key not null auto_increment,
+	`funciona` enum('s','n') not null,
+	`descricao` varchar(100),
+    `modelo_idmodelo` int ,
+    `marca_idmarca` int not null,
+    `tipo_idtipo`int not null
+);
+
+create table marca (
+`id` int primary key not null auto_increment,
+`nome` varchar(50)
+);
+
+create table modelo (
+`id` int primary key not null auto_increment,
+`nome` varchar(50)
+);
+
+create table tipo(
+`id`int primary key not null auto_increment,
+`dispositivo` varchar(50)
+);
+
+
+pesquisar em casa foreyn key

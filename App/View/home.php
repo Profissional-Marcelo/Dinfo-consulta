@@ -16,11 +16,11 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
 <body>
-    <?php require_once("filtro.js"); ?>
+    <?php require_once("filtro.php"); ?>
     <section class="sistema">
         <input type="number" name="patrimonio" id="patrimonio" placeholder="Consulta patrimonio">
         <a href="cadastro.php">Cadastrar no sistema <span class="material-symbols-outlined">add</span></a>
-        <a href="filtro.php" class="lista">Lista personalizada <span class="material-symbols-outlined">menu</span></a>
+        <button class="lista">Lista personalizada <span class="material-symbols-outlined">menu</span></button>
     </section>
     <script src="../../Assets/js/filtro.js"></script>
 </body>

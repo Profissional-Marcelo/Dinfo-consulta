@@ -5,11 +5,11 @@
         font-size: 30px;
     }
 
-    section > input, a {
+    section > input, a, button {
         margin: 25px;
     }
 
-    section > a {
+    section > a, button {
         width: 600px;
         height: 100px;
         font-size: 30px;
@@ -27,11 +27,11 @@
         font-size: 25px;
     }
 
-    section > input, a {
+    section > input, a, button {
         margin: 15px;
     }
 
-    section > a {
+    section > a, button {
         width: 500px;
         height: 50px;
         font-size: 25px;

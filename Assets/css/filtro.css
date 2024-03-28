@@ -18,3 +18,13 @@ menu {
 .open{
     display: block;
 }
+
+menu{
+    z-index: 1;
+    display: none;
+    position: absolute;
+    top: 0px;
+    background-image: radial-gradient(circle, #1F1F1F, #1F1F1F);
+    width: 66.66%;
+    height: 100vh;
+}

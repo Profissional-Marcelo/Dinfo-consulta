@@ -8,9 +8,10 @@
     <link rel="stylesheet" href="../../Assets/css/homeMQ.css">
 </head>
 <body>
+<?php require_once("filtro.php"); ?>
     <section class="sistema">
       <input type="text" name="patrimonio" id="patrimonio" placeholder="Consulta patrimonio">
-      <a href="filtro.php" class="lista">Lista personalizada</a>
+      <button class="lista">Lista personalizada</button>
     </section>
 </body>
 </html>

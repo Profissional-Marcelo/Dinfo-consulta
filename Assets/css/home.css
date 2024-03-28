@@ -45,7 +45,7 @@ section > input::placeholder{
     content: "\e5d2";
 } */
 
-section > input, a {
+section > input, a, button {
     border-radius: 5px;
     margin: 10px;
     padding: 10px;
@@ -53,7 +53,7 @@ section > input, a {
     font-weight: bold;
 }
 
-section > a {
+section > a, button {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -69,4 +69,8 @@ section > a {
 span {
     margin-left: 15px;
     font-size: 25px !important;
+}
+
+button {
+    border: none;
 }
